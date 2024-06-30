@@ -1,0 +1,151 @@
+/* SignUp.css */
+
+.sign-up-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+}
+ 
+.left-side-sign-up {
+    text-align: left;
+    padding: 20px;
+}
+ 
+.logo-sign-up {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+ 
+.sign-up-pic {
+    width: 700px;
+    height: 800px;
+    margin-top: -70px;
+    
+}
+ 
+.right-side-sign-up {
+    text-align: left;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+ 
+.input-container-sign-up {
+    margin-bottom: 20px;
+    position: relative;
+}
+ 
+.input-sign-up {
+    width: 370px;
+    padding: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+ 
+.label-sign-up {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    transform-origin: left top;
+    font-size: 16px;
+    transition: transform 0.2s, font-size 0.2s, color 0.2s;
+    pointer-events: none;
+    background-color: white;
+    padding: 0 5px;
+}
+ 
+.input-container-sign-up .input-sign-up:not(:placeholder-shown) + .label-sign-up {
+    transform: translateY(-25px);
+    font-size: 12px;
+    color: #1c5d88;
+}
+ 
+.input-container-sign-up .input-sign-up:focus + .label-sign-up,
+.input-container-sign-up .input-sign-up:not(:placeholder-shown) + .label-sign-up {
+    transform: translateY(-25px);
+    font-size: 12px;
+    color: #6c68dd;
+}
+ 
+.input-container-sign-up .input-sign-up:hover {
+    border: 1px solid black;
+}
+ 
+.sign-up-button {
+    background-color: #4a4f4e;
+    color: white;
+    width: 390px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin-top: 50px;
+    border-radius: 5px;
+    transition: filter 0.3s ease-in-out;
+}
+ 
+.sign-up-button:hover {
+    filter: brightness(1.2);
+}
+ 
+.input-error-sign-up {
+    border: 1px solid red;
+}
+ 
+.error-message-sign-up {
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    transform: translateY(5px);
+    color: red;
+    font-size: 12px;
+}
+
+.input-container-sign-up .input-sign-up:focus {
+    border: 2px solid #262293;
+}
+ 
+.input-container-sign-up .input-sign-up:focus {
+    outline: none;
+}
+/* signUp.css */
+
+/* Add styles for the popup container */
+.popup {
+    position: fixed;
+    top: 90%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border:1px solid silver;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  .popup p {
+    margin-bottom: 10px;
+  }
+  
+  .popup button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #45a049;
+  }
+  
